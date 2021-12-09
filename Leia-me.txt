@@ -1,0 +1,6 @@
+- Instalar o Python 3.10, a versão para Win64 está na pasta, se precisar de outra vá em python.org
+- Deixar o script no local onde será feito o backup
+- Criar um atalho na área de trabalho
+- Testar o script
+* Quando testar o script colocar para sempre abrir com o python
+- - Se apresentar erro abra o script com bloco de notas e verifique se o caminho do banco de dados de origem está certo
