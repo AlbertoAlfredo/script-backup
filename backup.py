@@ -2,14 +2,16 @@ from datetime import datetime
 import shutil
 import os
 
-
-data_e_hora = datetime.now().strftime('%d-%m-%Y-%H%M')
+destino = 'd:\\backup'
 origem = "C:\Versátil\Versátile Expert\dados_sposto.fdb"
+data_e_hora = datetime.now().strftime('%d-%m-%Y-%H%M')
 nome_do_arquivo = "dados_sposto.fdb"
-destino = 'd:\\backups'
+nome_arquivo_zip = data_e_hora+nome_do_arquivo
+
 try:
     if os.path.exists(destino):
-        shutil.make_archive(data_e_hora+nome_do_arquivo, 'zip', destino, origem)
+        shutil.make_archive(nome_arquivo_zip, 'zip','.\\', origem)
+        shutil.move(".\\"+nome_arquivo_zip+".zip", destino)
         print("Backup efetuado com sucesso \n")
         input("Precione enter para finalizar..........")
     else:
@@ -18,7 +20,8 @@ try:
         except:
             print("Erro ao criar o diretório de bakup, favor verificar o destino")
             input("Precione enter para finalizar..........")
-        shutil.make_archive(data_e_hora+nome_do_arquivo, 'zip', destino, origem)
+        shutil.make_archive(nome_arquivo_zip, 'zip','.\\', origem)
+        shutil.move(".\\"+nome_arquivo_zip+".zip", destino)
         print("Backup efetuado com sucesso \n")
         input("Precione enter para finalizar..........")
 except:
