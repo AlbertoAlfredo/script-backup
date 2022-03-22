@@ -1,4 +1,15 @@
+# Executável
+
+- Dentro da pasta dist/ está o executável 
+- Sempre deixar o config.json junto com o executável
+
 # Script básico para backup
 
-Criei esse script por uma emergência que passei, ele foi feito com o python 3.10 instalado em meu computador.
-Para usar instale o python em sua máquina, edite o script na parte de arquivo de origem e destino e execute o script
+- Instalar o Python 3.8, se precisar de outra vá em python.org
+- Deixar o script no local onde será feito o backup
+- Criar um atalho na área de trabalho
+- Testar o script
+* Quando testar o script colocar para sempre abrir com o python
+- - Se apresentar erro abra o script com bloco de notas e verifique se o caminho do banco de dados de origem está certo
+- No caso das barras '\' sempre usar a barra da web '/' ou usar duas barras no lugar de uma '\\'
+
