@@ -1,9 +1,9 @@
 ('C:\\Github\\script-backup\\dist\\backup.exe',
- True,
+ False,
  False,
  False,
  'c:\\program '
- 'files\\python38\\lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-console.ico',
+ 'files\\python38\\lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-windowed.ico',
  None,
  False,
  False,
@@ -209,8 +209,8 @@
  [],
  False,
  False,
- 1647979918,
- [('run.exe',
+ 1647981347,
+ [('runw.exe',
    'c:\\program '
-   'files\\python38\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
+   'files\\python38\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\runw.exe',
    'EXECUTABLE')])
