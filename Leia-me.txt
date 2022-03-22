@@ -4,4 +4,4 @@
 - Testar o script
 * Quando testar o script colocar para sempre abrir com o python
 - - Se apresentar erro abra o script com bloco de notas e verifique se o caminho do banco de dados de origem está certo
-- No caso das barras '\' sempre usar duas'\\' para evitar dores de cabeça
+- No caso das barras '\' sempre usar a barra da web '/' ou usar duas barras no lugar de uma '\\'

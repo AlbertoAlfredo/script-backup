@@ -8,16 +8,18 @@ import json
 def ler_json(arq_json):
     with open(arq_json, 'r', encoding='utf8') as f:
         return json.load(f)
-data = ler_json('config.json')
-
+data = ler_json('config-backup.json')
+origem = data['origem'].replace("/", "\\")
+destino = data['destino'].replace("/", "\\")
 
 #destino = 'd:\\backup'
-destino = data['destino']
 #origem = "C:\\Versátil\\Versátile Expert\\dados_sposto.fdb"
-origem = data['origem']
 data_e_hora = datetime.now().strftime('%d-%m-%Y-%H%M%S')
 nome_do_arquivo = "dados_sposto.fdb"
-nome_arquivo_zip = data_e_hora+nome_do_arquivo
+if (data['usar-data-hora']):
+    nome_arquivo_zip = data_e_hora+nome_do_arquivo
+else:
+    nome_arquivo_zip = nome_do_arquivo
 
 
 #shutil.make_archive(nome_arquivo_zip, 'zip','.\\', origem)
@@ -31,7 +33,6 @@ try:
         shutil.make_archive(nome_arquivo_zip, 'zip','.\\', origem)
         shutil.move(".\\"+nome_arquivo_zip+".zip", destino)
         print("Backup efetuado com sucesso \n")
-        input("Precione enter para finalizar..........")
     else:
         try:
             os.mkdir(destino)
