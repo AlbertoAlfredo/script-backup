@@ -2,6 +2,7 @@
 
 - Dentro da pasta dist/ está o executável 
 - Sempre deixar o config.json junto com o executável
+- - No caso das barras '\' sempre usar a barra da web '/' ou usar duas barras no lugar de uma '\\'
 
 # Script básico para backup
 
@@ -11,5 +12,6 @@
 - Testar o script
 * Quando testar o script colocar para sempre abrir com o python
 - - Se apresentar erro abra o script com bloco de notas e verifique se o caminho do banco de dados de origem está certo
-- No caso das barras '\' sempre usar a barra da web '/' ou usar duas barras no lugar de uma '\\'
+- Sempre deixar o config.json junto com o executável
+- - No caso das barras '\' sempre usar a barra da web '/' ou usar duas barras no lugar de uma '\\'
 
