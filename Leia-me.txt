@@ -1,4 +1,4 @@
-- Instalar o Python 3.10, a versão para Win64 está na pasta, se precisar de outra vá em python.org
+- Instalar o Python 3.8, se precisar de outra vá em python.org
 - Deixar o script no local onde será feito o backup
 - Criar um atalho na área de trabalho
 - Testar o script
