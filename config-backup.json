@@ -1,5 +1,7 @@
 {
     "origem": "c:/Versatil/Versatile Expert/dados_sposto.fdb",
     "destino": "c:/backup",
-    "usar-data-hora":true
+    "nome-arquivo-destino": "dados_sposto.fdb",
+    "usar-data-hora":true,
+    "compactar":true
 }
