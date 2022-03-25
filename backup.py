@@ -9,7 +9,7 @@ import codecs
 
 # Função que lê o Json
 def ler_json(arq_json):
-    with codecs.open(arq_json, 'r', encoding='utf-8', errors='ignore') as f:
+    with codecs.open(arq_json, 'r', encoding='utf-8', errors='replace') as f:
         return json.load(f)
 data = ler_json('config-backup.json')
 origem = data['origem'].replace("/", "\\")
