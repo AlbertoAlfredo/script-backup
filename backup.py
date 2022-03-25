@@ -4,11 +4,12 @@ from datetime import datetime
 import shutil
 import os
 import json
+import codecs
 
 
 # Função que lê o Json
 def ler_json(arq_json):
-    with open(arq_json, 'r', encoding='utf8') as f:
+    with codecs.open(arq_json, 'r', encoding='utf-8', errors='ignore') as f:
         return json.load(f)
 data = ler_json('config-backup.json')
 origem = data['origem'].replace("/", "\\")
