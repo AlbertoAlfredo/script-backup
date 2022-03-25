@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: cp1252 -*-
 
 from datetime import datetime
 import shutil
@@ -9,7 +9,7 @@ import codecs
 
 # Função que lê o Json
 def ler_json(arq_json):
-    with codecs.open(arq_json, 'r', encoding='utf-8', errors='replace') as f:
+    with open(arq_json, 'r', encoding='utf-8', errors='replace') as f:
         return json.load(f)
 data = ler_json('config-backup.json')
 origem = data['origem'].replace("/", "\\")
@@ -46,8 +46,7 @@ try:
             mover()
         except:
             print("Erro ao criar o diretório de bakup, favor verificar o destino")
-            input("Precione enter para finalizar..........")
         print("Backup efetuado com sucesso")
 except:
     print("Erro inesperado, cheque o caminho de origem \n")
-    input("Precione enter para finalizar..........")
+    print(origem)
